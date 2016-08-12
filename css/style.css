@@ -7,11 +7,7 @@ i.gavickpro-own-icon {
     background-image: url('../images/replogo.png');
     background-color: transparent;
 }
-<<<<<<< HEAD
 div#rme_search_result {
-=======
-div#rcc_search_result {
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
     position: absolute;
     display: block;
     z-index: 9999;
@@ -26,27 +22,15 @@ div#rcc_search_result {
 	cursor: default;
     min-width: 283px;
 }
-<<<<<<< HEAD
 div#rme_search_result ul li {
-=======
-div#rcc_search_result ul li {
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
 	word-wrap: break-word;
 	text-align: left;
     line-height: 22px;
 	font: 16px arial,sans-serif;
 	padding: 1px 2px 1px 2px;
-<<<<<<< HEAD
   padding-left: 5px;
   cursor: pointer;
 }
 div#rme_search_result ul li:hover {
 	background-color: #eee;
 }
-=======
-}
-div#rcc_search_result ul li:hover {
-	background-color: #eee;
-}
-    
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d

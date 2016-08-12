@@ -7,13 +7,8 @@
             onclick: function() {
                 var win = editor.windowManager.open({
                     title: 'Represent Shortcode Gen.',
-<<<<<<< HEAD
                     width: 800,
                     height: 100,
-=======
-                    width: 600,
-                    height: 200,
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
                     body: [{
                         type: 'textbox',
                         id: 'txt__rme_keyword',
@@ -52,11 +47,7 @@
                         type: 'container',
                         name: 'container',
                         label: ' ',
-<<<<<<< HEAD
                         html: '<div height="auto" width="275px" style="background-color: white; z-index: 9999999;" id="rme_search_result"></div>',
-=======
-                        html: '<div height="auto" width="275px" id="rme_search_result"></div>',
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
                         multiline: true,
                         style: 'height: auto; width:275px;',
                     }, {
@@ -90,20 +81,14 @@
                                 editor.insertContent(shortcode);
                                 editor.windowManager.close();
                             } else {
-<<<<<<< HEAD
                               document.getElementById("pmc_notification").innerHTML = 'Please pick one question.';
-=======
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
                             }
                             return false;
                         }
                     },
                     onclick: function() {
                         document.getElementById("rme_search_result").innerHTML = '';
-<<<<<<< HEAD
                         document.getElementById("pmc_notification").innerHTML = '';
-=======
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
                     }
                 });
             }
@@ -119,11 +104,7 @@ function callback__search_api_result_click(value, slug, id)
       shortcode = shortcode + ' id="' + id + '"';
       shortcode = shortcode + ' slug="' + slug + '"';
       shortcode = shortcode + ']';
-<<<<<<< HEAD
 	//document.getElementById("rme_search_result").innerHTML = shortcode;
   tinyMCE.activeEditor.insertContent(shortcode);
   tinyMCE.activeEditor.windowManager.close();
-=======
-	document.getElementById("rme_search_result").innerHTML = shortcode;
->>>>>>> 2a83c3e107fd421c057e7b45eaa8f6cfe0bfdc4d
 }
