@@ -7,8 +7,8 @@
             onclick: function() {
                 var win = editor.windowManager.open({
                     title: 'Represent Shortcode Gen.',
-                    width: 600,
-                    height: 200,
+                    width: 800,
+                    height: 100,
                     body: [{
                         type: 'textbox',
                         id: 'txt__rme_keyword',
@@ -47,7 +47,7 @@
                         type: 'container',
                         name: 'container',
                         label: ' ',
-                        html: '<div height="auto" width="275px" id="rme_search_result"></div>',
+                        html: '<div height="auto" width="275px" style="background-color: white; z-index: 9999999;" id="rme_search_result"></div>',
                         multiline: true,
                         style: 'height: auto; width:275px;',
                     }, {
@@ -81,12 +81,14 @@
                                 editor.insertContent(shortcode);
                                 editor.windowManager.close();
                             } else {
+                              document.getElementById("pmc_notification").innerHTML = 'Please pick one question.';
                             }
                             return false;
                         }
                     },
                     onclick: function() {
                         document.getElementById("rme_search_result").innerHTML = '';
+                        document.getElementById("pmc_notification").innerHTML = '';
                     }
                 });
             }
@@ -102,5 +104,7 @@ function callback__search_api_result_click(value, slug, id)
       shortcode = shortcode + ' id="' + id + '"';
       shortcode = shortcode + ' slug="' + slug + '"';
       shortcode = shortcode + ']';
-	document.getElementById("rme_search_result").innerHTML = shortcode;
+	//document.getElementById("rme_search_result").innerHTML = shortcode;
+  tinyMCE.activeEditor.insertContent(shortcode);
+  tinyMCE.activeEditor.windowManager.close();
 }

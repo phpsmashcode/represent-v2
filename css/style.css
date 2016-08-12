@@ -7,7 +7,7 @@ i.gavickpro-own-icon {
     background-image: url('../images/replogo.png');
     background-color: transparent;
 }
-div#rcc_search_result {
+div#rme_search_result {
     position: absolute;
     display: block;
     z-index: 9999;
@@ -22,14 +22,15 @@ div#rcc_search_result {
 	cursor: default;
     min-width: 283px;
 }
-div#rcc_search_result ul li {
+div#rme_search_result ul li {
 	word-wrap: break-word;
 	text-align: left;
     line-height: 22px;
 	font: 16px arial,sans-serif;
 	padding: 1px 2px 1px 2px;
+  padding-left: 5px;
+  cursor: pointer;
 }
-div#rcc_search_result ul li:hover {
+div#rme_search_result ul li:hover {
 	background-color: #eee;
 }
-    
